@@ -28,6 +28,7 @@ const AppContext = props => {
             isLoading,
             setIsLoading,
             searchResults,
+            selectCategories,
             setSelectCategories,
             mobileMenu,
             setMobileMenu
