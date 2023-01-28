@@ -4,17 +4,12 @@ const apiConfig = {
     method: 'GET',
     params: { hl: 'en', gl: 'US' },
     headers: {
-        'X-RapidAPI-Key': import.meta.env.RAPIDAPI_KEY,
-        'X-RapidAPI-Host': import.meta.env.RAPIDAPI_HOST
+        'X-RapidAPI-Key': import.meta.env.VITE_RAPIDAPI_KEY,
+        'X-RapidAPI-Host': import.meta.env.VITE_RAPIDAPI_HOST
     }
 }
 
 export const fetchDataFromApi = async url => {
-    const { data } = await axios.get(`${import.meta.env.BASE_URL}/${url}`, apiConfig)
+    const { data } = await axios.get(`${import.meta.env.VITE_BASE_URL}/${url}`, apiConfig)
+    return data
 }
-
-// axios.request(apiConfig).then(res => {
-//     console.log(res.data);
-// }).catch(err => {
-//     console.error(err)
-// })
