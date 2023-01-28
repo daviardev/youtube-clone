@@ -7,7 +7,7 @@ export const Context = createContext()
 const AppContext = props => {
     const [isLoading, setIsLoading] = useState(false)
     const [mobileMenu, setMobileMenu] = useState(false)
-    const [searchResults, setSearchResults] = useState(false)
+    const [searchResults, setSearchResults] = useState('Inicio')
     const [selectCategories, setSelectCategories] = useState(false)
 
     useEffect(() => {
