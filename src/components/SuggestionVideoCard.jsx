@@ -15,8 +15,8 @@ const SuggestionVideoCard = ({ video }) => {
                         src={video?.thumbnails[0]?.url}
                         className='h-full w-full object-cover'
                     />
-                    {video?.lemgthSeconds && (
-                        <VideoLength time={video?.lemgthSeconds} />
+                    {video?.lengthSeconds && (
+                        <VideoLength time={video?.lengthSeconds} />
                     )}
                 </div>
                 <div className='flex flex-col ml-3 overflow-hidden'>
